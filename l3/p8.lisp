@@ -1,4 +1,6 @@
-;;one to rule them all :))
+;;8. Sa se construiasca o functie care intoarce maximul atomilor numerici
+;;   dintr-o lista, de la orice nivel.
+
 (defun toOneLevel(element)
     (cond 
         ((listp element) (mapcan #'toOneLevel element))
